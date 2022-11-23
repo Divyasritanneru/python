@@ -1,0 +1,24 @@
+sno=int(input('enter student no:'))
+name=input('enter student name:')
+group=input('enter group:')
+s1=int(input('enter maths:'))
+s2=int(input('enter physics:'))
+s3=int(input('enter computers:'))
+total=s1+s2+s3
+avg=total/3
+print('sno:',sno)
+print('name:',name)
+print('group:',group)
+print('total:',total)
+print('avg:',avg)
+enter student no:15
+enter student name:Tom
+enter group:AI
+enter maths:24
+enter physics:25
+enter computers:27
+sno: 15
+name: Tom
+group: AI
+total: 76
+avg: 25.333333333333332
