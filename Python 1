@@ -1,0 +1,7 @@
+a=(input('enter a:'))
+b=(input('enter b:'))
+print ('a is big') if a>b else print('b is big')
+Output:
+enter a: 10
+enter b:30
+b is big
