@@ -1,0 +1,11 @@
+##Write a program to check the given pin number is valid or not.
+##if it is valid,print continue the transactions.
+##if it is not valid,print incorrect pin number .please try again.
+
+pin=1234
+a=int(input("Enter the number:"))
+if a==pin:
+    print("continue the transactions")
+else:
+    print("incorrect pin number")
+    print("please try again")
