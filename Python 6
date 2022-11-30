@@ -1,0 +1,21 @@
+sno=int(input("enter sno:"))
+sname=input("enter group:")
+group=input("enter group:")
+s1=int(input("enter maths marks:"))
+s2=int(input("enter AI marks:"))
+s3=int(input("enter CS marks:"))
+total=s1+s2+s3
+avg=total//3
+print("sno",sno)
+print("group",group)
+print("sname",sname)
+print("total",total)
+print("result",result)
+if avg>90:
+    print("distinction")
+elif avg>70:
+    print("first class")
+elif avg>45:
+    print("pass")
+else:
+    print("fail")
