@@ -1,0 +1,70 @@
+pc=800
+sc=250
+cc=350
+df=600
+vc=250
+cphno=input('Enter Customer phone number:')#123
+cname=input('Enter Customer name:')#ravi
+caddr=input('Enter customer address:')#vzm
+pq=int(input('enter quantity of pc:'))#1
+sq=int(input('enter quantity of sc:'))#0
+cq=int(input('enter quantity of cc:'))#0
+dfq=int(input('enter quantity of df:'))#0
+vq=int(input('enter quantity of vc:'))#1
+bill=(pq*pc)+(sq*sc)+(cq*cc)+(dfq*df)+(vq*vc)#225
+if bill>=3000:
+    tax=bill*5/100
+elif bill>=2000:
+    tax=bill*7/100
+elif bill>=1000:
+    tax=bill*10/100
+elif bill>=500:
+    tax=bill*15/100
+else:
+    tax=100
+    tax=tax+bill
+print('cphno:',cphno)
+print('cname:',cname)
+print('tax to be paid:',tax)
+print('bill to be paid:',bill)
+
+output:Enter Customer phone number:484
+Enter Customer name:jytohi
+Enter customer address:rjy
+enter quantity of pc:4
+enter quantity of sc:5
+enter quantity of cc:3
+enter quantity of df:5
+enter quantity of vc:3
+cphno: 484
+cname: tom
+t   462.5
+pc=800
+sc=250
+cc=350
+df=600
+vc=250
+cphno=input('Enter Customer phone number:')#123
+cname=input('Enter Customer name:')#ravi
+caddr=input('Enter customer address:')#vzmpq=int(input('enter quantity of pc:'))#1
+sq=int(input('enter quantity of sc:'))#0
+cq=int(input('enter quantity of cc:'))#0
+df=int(input('enter quantity of df:'))#0
+vq=int(input('enter quantity of vc:'))#1
+bill=(pq*pc)+(sq*sc)+(cq*cc)+(dfq*df)+(vq*vc)#225
+if bill>=3000:
+    tax=bill*5/100
+elif bill>=2000:
+    tax=bill*7/100
+elif bill>=1000:
+    tax=bill*10/100
+elif bill>=500:
+    tax=bill*15/100
+else:
+    tax=100
+    tax=tax+bill
+print('cphno:',cphno)
+print('cname:',cname)
+print('tax to be paid:',tax)
+print('bill to be paid:',bill)
+
