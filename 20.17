@@ -1,0 +1,6 @@
+Test_list = int(input('enter numbers'))
+Test_list.reverse()
+print(Test_list)  
+
+New_list = Test_list.reverse()
+print(New_list)
