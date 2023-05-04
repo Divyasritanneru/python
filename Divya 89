@@ -1,0 +1,12 @@
+d={}
+n=int(input("enter no.of students"))
+for i in range (1,n+1):
+    name=input("n")
+    result=input("r")
+    d[name]=result
+for i in range(1,n+1):
+    name=input("name")
+    if name in d:
+        print(name,d[name],'the exam')
+    else:
+        print("invalid input")
