@@ -1,0 +1,35 @@
+'''
+class DivyaSri:
+    pass
+instructor_1=DivyaSri()
+print(type(instructor_1))
+'''
+'''
+class Instructor:
+   def __init__(self) -> None:
+      print("creating a new object")
+Instructor_1=Instructor()
+Instructor_1.name="jenny"
+Instructor_1.address="delhi"
+print(Instructor_1.name)
+Instructor_2=Instructor()
+Instructor_2.name="payal"
+Instructor_2.address="gurugaon"
+print(Instructor_2.name)
+'''
+class Instructor:
+    followers=0
+    def __init__(self,name,address):
+        self.name=name
+        self.address=address
+    def display(self,subject_name):
+        print(f"hi i am {self.name} and i teach {subject_name}")
+    def update_followers(self,follower_name):
+        self.followers+=1
+Instructor1=Instructor("jenny","gurugaon")
+#print(Instructor1.name)   
+#Instructor1.display("python") 
+Instructor1.update_followers("divya")
+print(Instructor1.followers)
+Instructor2=Instructor("payal","delhi")
+print(Instructor2.followers)
