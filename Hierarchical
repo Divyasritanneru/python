@@ -1,0 +1,38 @@
+class Human:
+    def __init__(self,run,dance):
+        self.run=run
+        self.dance=dance
+    def display(self):
+         print("i will display")
+    def displaying(self):
+        print("i'm displaying....")
+class student(Human):
+    def __init__(self,read,write):
+        self.read=read 
+        self.write=write
+        print("i'm here for studying")
+    def display(self):
+        print("display from human1 ")
+        super().display()
+'''       
+class Teacher(Human):
+    def __init__(self,run,dance,read,write,careof,correct):
+        Human.__init__(self,run,dance)
+        student.__init__(self,read,write)
+        self.careof=True
+        self.correct=correct
+       
+    def teach(self):
+        print("i am here to teach")
+    def display(self):
+        print("display from human2")
+        super().display()#displaying only 2 method statements
+        '''
+       
+        
+#teacher_1=Teacher(True,True,"telugu","english",True,"maths")
+#teacher_1.display()
+#print(Teacher.mro())
+#print(teacher_1.correct)
+student_1=student(1,0)
+student_1.display()
