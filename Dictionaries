@@ -1,0 +1,42 @@
+phone_no={
+    'divya':6301949103,
+    'tagore':9652554935,
+    'suresh':9346521110,
+    'vijaya':8341205812,
+    
+}
+
+print(phone_no)
+#phone_no['tagore']=[6305424040,9381746824,6304122467]
+#print(phone_no['tagore'][1])
+#print(phone_no.get('divya'))
+#print(phone_no.popitem())
+#print(phone_no.clear())
+#print(phone_no)
+#print(phone_no.keys())
+#print(phone_no.values())
+#print(phone_no.items())
+
+'''
+#using dict keyword
+phone_no=dict(
+    {
+    'divya':6301949103,
+    'tagore':9652554935,
+    'suresh':9346521110,
+    'vijaya':8341205812
+
+    }
+)
+print(phone_no['divya'])
+'''
+'''
+#for only values
+for i in phone_no:
+    print(i)
+#for both values
+    print(phone_no[i])
+'''
+phone_no2=phone_no.copy()
+print(phone_no2)
+print(len(phone_no2))
