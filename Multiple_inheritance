@@ -1,0 +1,50 @@
+'''
+class Human:
+    def eat(self) :
+        print("i can eat")
+    def work(self):
+        print("i can work")
+class Male:
+    def flirt(self):
+        print("i can flirt")
+    def work (self):
+        print("i can code")
+class Boy(Human,Male):#(male,human>>>>> i can code ( prefers first written class))
+    pass
+boy_1=Boy()
+boy_1.work()
+#everytime we cannot change order so we should write like....
+Male.work(boy_1)
+'''
+class Human:
+    def __init__(self,num_heart) :
+        self.heart=num_heart
+        self.num_eyes=2
+        self.num_nose=1
+    def eat(self):
+        print("i can eat")
+    def work(self):
+        print("i can work")
+class Male:
+    def __init__(self,name) :
+        self.name=name
+    def flirt(self):
+        print("i can flirt")
+    def work(self):
+        print("i can code")
+class Boy(Human,Male):
+    def __init__(self,name,num_heart,language):
+        Human.__init__(self,num_heart)
+        Male.__init__(self,name)
+        self.language=language
+    def sleep(self):
+        print("i can sleep")
+    def work(self):
+        print("i can test")
+    def display(self):
+        print(f"i am {self.name} and i work on {self.language} ")
+boy_1=Boy("sai",1,"python")
+#print(boy_1.num_nose)
+#print(boy_1.name)
+#print(boy_1.language)
+boy_1.display()
