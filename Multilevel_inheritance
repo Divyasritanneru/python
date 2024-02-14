@@ -1,0 +1,62 @@
+class Human:
+    def eat(self):
+        print("i can eat")
+    def work(self):
+        print("i can work")
+class Male(Human):
+    def sleep(self):
+        print("i can sleep all the day")
+    def work(self):
+        print("i can code")
+        super().work()
+class Boy(Male,Human):
+    def write(self):
+        print("i can write the code")
+    def work(self):
+        print("i can read")
+        super().work()
+class Programmer(Boy):
+    def work(self):
+        print("i know programming")
+        super().work()
+        
+#boy_1=Boy()
+#boy_1.work()
+#Male.work(Boy)
+prog_1=Programmer()
+prog_1.work()
+
+'''
+class Human:
+    can_breathe=True
+    def __init__(self,num_heart) :
+        self.num_eyes=2
+        self.heart=num_heart
+        
+    def eat(self):
+        print("i can eat")
+    def work(self):
+        print("i can work")
+class Male(Human):
+    def __init__(self, name):
+       self.name=name
+    def sleep(self):
+        print("i can sleep")
+    def work(self):
+        print("i can dance")
+        #super().work()
+class Boy(Male):
+    def __init__(self,heart, name,can_dance):
+        Human.__init__(self,heart)
+        Male.__init__(self,name)
+        self.know_dancing=can_dance
+
+    def work(self):
+        print("i can code")
+        super().work()
+boy_1=Boy(1,"rahul",True)
+#print(boy_1.name)
+boy_1.work()
+print(Boy.mro())
+
+'''
