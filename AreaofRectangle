@@ -1,0 +1,11 @@
+class Rectangle:
+    def __init__(self,length=3,breadth=4):
+        self.length=length
+        self.breadth=breadth
+    def area(self):
+        area=self.length*self.breadth
+        return area
+rectangle1=Rectangle()#3,4
+print(rectangle1.area())
+rectangle2=Rectangle(4,5)
+print(rectangle2.area())
