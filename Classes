@@ -1,0 +1,17 @@
+'''
+class DivyaSri:
+    pass
+instructor_1=DivyaSri()
+print(type(instructor_1))
+'''
+class Instructor:
+   def __init__(self) -> None:
+      print("creating a new object")
+Instructor_1=Instructor()
+Instructor_1.name="jenny"
+Instructor_1.address="delhi"
+print(Instructor_1.name)
+Instructor_2=Instructor()
+Instructor_2.name="payal"
+Instructor_2.address="gurugaon"
+print(Instructor_2.name)
