@@ -1,0 +1,27 @@
+class Human:
+    def __init__(self,num_heart) :
+        self.num_eyes=2
+        self.nose=1
+        self.num_heart=1
+        
+        
+    def work(self):
+        print("i can work")
+    def eat(self):
+        print('i can eat')
+class male(Human):
+    def __init__(self,num_heart,name):
+        super().__init__(num_heart)
+        self.name=name
+    def flirt(self):
+        print("i can flirt")
+    def work(self):
+        #super().work()
+        print("i can code")
+    def display(self):
+        print(f"i am {self.name} and i have {self.num_heart} heart")
+male_1=male(1,"divya")
+#male_1.flirt()
+#male_1.work()#work: i can work is over ridden
+#print(male_1.num_eyes)
+male_1.display()
